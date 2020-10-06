@@ -1,6 +1,6 @@
 main: com.shardbytes.safearea.SafeArea
 name: SafeArea
-version: "1.1"
+version: "1.2"
 api-version: "1.16"
 author: ShardBytes (plajdo)
 website: shardbytes.com
@@ -11,6 +11,12 @@ commands:
     usage: /sa-test
     permission: safearea.test
     permission-message: You do not have permissions to test this plugin.
+
+  sa-check:
+    description: Check if you are standing inside a safe area.
+    usage: /sa-check
+    permission: safearea.check
+    permission-message: You do not have permissions to check whether you are standing inside a safe area.
 
   sa-create:
     description: Create a new safe area.
@@ -35,6 +41,10 @@ permissions:
     description: Allows to test if this plugin is installed correctly.
     default: op
 
+  safearea.check:
+    description: Allows to check whether you are standing inside a safe area.
+    default: op
+
   safearea.edit:
     description: Allows to create and remove safe areas.
     default: op
@@ -50,3 +60,4 @@ permissions:
       safearea.test: true
       safearea.edit: true
       safearea.list: true
+      safearea.check: true

@@ -47,12 +47,12 @@ object Areas {
 
     }
 
-    fun isInsideAnArea(location: Location): Boolean {
+    fun isInsideAnArea(location: Location): Area? {
         for(area in list) {
-            if(area.locationInside(location)) return true
+            if(area.locationInside(location)) return area
 
         }
-        return false
+        return null
 
     }
 

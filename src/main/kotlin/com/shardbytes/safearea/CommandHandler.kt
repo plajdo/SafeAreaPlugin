@@ -12,6 +12,10 @@ object CommandHandler {
             return pluginTest(sender)
 
         }
+        if(command.name.equals("sa-check", ignoreCase = true)) {
+            return checkArea(sender)
+
+        }
         if(command.name.equals("sa-create", true)) {
             return createSafeArea(sender, args)
 
@@ -88,6 +92,25 @@ object CommandHandler {
 
         }
         return true
+
+    }
+
+    private fun checkArea(sender: CommandSender): Boolean {
+        if(sender is Player) {
+            val currentArea = Areas.isInsideAnArea(sender.location)
+            if(currentArea != null) {
+                sender.sendMessage(ChatColor.GREEN.toString() + "Yes" + ChatColor.RESET.toString() + ", you are standing inside a safe area.")
+                sender.sendMessage("Current safe area bounds: " + currentArea.toString())
+                return true
+
+            } else {
+                sender.sendMessage(ChatColor.RED.toString() + "No" + ChatColor.RESET.toString() + ", you are not standing inside a safe area.")
+                return true
+
+            }
+
+        }
+        return false
 
     }
 

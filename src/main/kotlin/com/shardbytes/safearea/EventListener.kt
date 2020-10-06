@@ -15,7 +15,7 @@ object EventListener: Listener {
     fun mobSpawnHandler(event: CreatureSpawnEvent) {
         if(event.spawnReason == NATURAL || event.spawnReason == TRAP || event.spawnReason == PATROL) { // Allow spawn eggs
             if(event.entity is Monster) { // Allow neutral or passive mobs
-                if(Areas.isInsideAnArea(event.location)) {
+                if(Areas.isInsideAnArea(event.location) != null) {
                     event.isCancelled = true
 
                 }
