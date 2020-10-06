@@ -17,6 +17,8 @@ This plugin solves this issue by allowing you to mark the area as safe and it wi
 #### Commands:
 - /sa-test
     - Does nothing, just prints a message confirming that the plugin was loaded successfully.
+- /sa-check
+    - Checks if you are currently standing inside of a safe area.
 - /sa-create <x1> <y1> <z1> <x2> <y2> <z2>
     - Creates a new safe area between two points in your Minecraft world.
     - From that point on until it's removed it will block spawning of any hostile mobs!
@@ -29,6 +31,8 @@ This plugin solves this issue by allowing you to mark the area as safe and it wi
 #### Permissions:
 - safearea.test
     - Permits using the /sa-test command.
+- safearea.check
+    - Permits checking whether you are standing inside of a safe area.
 - safearea.edit
     - Permits creating and removing any safe areas.
 - safearea.list
