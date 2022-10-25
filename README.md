@@ -1,3 +1,4 @@
+![Supported versions: 1.17+](https://img.shields.io/badge/supported%20versions-1.17%2B-green)
 ---
 ### What is SafeArea?
 SafeArea is a simple plugin that prevents hostile mobs from spawning in marked areas.
@@ -5,11 +6,11 @@ SafeArea is a simple plugin that prevents hostile mobs from spawning in marked a
  
 ---
 ### Why is SafeArea there?
-I'm sure every one of us has built something in Minecraft that looked better in dark. The problem is, when you build it in survival, mobs can spawn and it becomes dangerous at night. And If you don't want to ruin the looks of your build by lighting it up and putting torches everywhere, you have no other choice other than to constantly deal with monsters.
+I'm sure every one of us has made something in Minecraft that looked better in the dark. The problem is, however, when you build it in survival mode, monsters can spawn and it becomes dangerous at night. Most players don't want to light the build up and put torches everywhere, so they end up having no other choice than to constantly deal with monsters.
 
  
 
-This plugin solves this issue by allowing you to mark the area as safe and it will prevent any hostile mobs from spawning in there. Don't worry, pigs, sheep or other friendly entities will still be able to spawn.
+This plugin solves this issue by allowing you to mark an area as safe, and it will prevent any hostile mobs from spawning in there. Don't worry, pigs, sheep or other friendly animals will still be able to spawn.
 
  
 ---
@@ -43,7 +44,7 @@ This plugin solves this issue by allowing you to mark the area as safe and it wi
 
  
 ---
-### Why the X?
+### Why X at the end?
 A project with the same name sadly exists, but it was deprecated a long time ago, so I thought it would be okay to use this name anyways.
 
  
